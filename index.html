@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boarding House Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            padding: 20px;
+            background-color: rgb(167, 167, 149);
+            box-sizing: border-box;
+        }
+
+        form {
+            width: 100%;
+            max-width: 400px;
+            background-color: #c0bdb0;  
+            padding: 24px;
+            border-radius: 12px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+
+        @media (min-width: 768px) {
+            body {
+                padding-top: 60px;
+            }
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            margin-bottom: 4px;
+            font-weight: 500;
+            color: #2b2a25;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 8px;
+            border: 1px solid #aaa;
+            border-radius: 6px;
+            font-size: 16px; 
+            box-sizing: border-box;
+            background-color: #fdfdfb;
+        }
+
+        #calculate-btn {
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            border-radius: 6px;
+            background-color: #e9d49d;
+            color: rgb(27, 19, 19);
+            border: none;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        #calculate-btn:hover {
+            background-color: #6ab2d4;
+        }
+        
+        
+        #calculate-btn:active {
+            transform: scale(0.98);
+        }
+
+        #result {
+            width: 100%;
+            max-width: 400px;
+            margin-top: 20px;
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            background-color: #c0bdb0;
+            box-sizing: border-box;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form id="bh-form">
+        <label for="rent">Total Bill:</label>
+        <input type="number" id="rent" name="rent" required>
+        
+        <label for="Waterbill">Enter Water Bill:</label>
+        <input type="number" id="Waterbill" name="Waterbill" required>
+        
+        <label for="Msc">Enter Msc:</label>
+        <input type="number" id="Msc" name="Msc" required>
+        
+        <label for="Ireneo">Ireneo:</label>
+        <input type="number" id="Ireneo" name="Ireneo" required>
+
+        <label for="Holly">Holly:</label>
+        <input type="number" id="Holly" name="Holly" required>
+
+        <label for="Rifanie">Rifanie:</label>
+        <input type="number" id="Rifanie" name="Rifanie" required>
+
+        <label for="Leiz">Leiz:</label>
+        <input type="number" id="Leiz" name="Leiz" required>
+
+        <label for="Axel">Axel:</label>
+        <input type="number" id="Axel" name="Axel" required>
+
+        <button type="submit" id="calculate-btn">Calculate</button>
+    </form>
+    <div id="result"></div>
+    <script src="script.js"></script>
+</body>
+</html>
